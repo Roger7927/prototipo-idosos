@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combate à Exclusão Digital: Ferramenta Acessível para Idosos</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    
+    <div class="app-container">
+        
+        <header id="app-header" class="oculto">
+            <h1 id="header-titulo"></h1>
+            <div id="header-info">
+                <div id="progresso-container" classuto">
+                    <p id="progresso-texto">Progresso: 0/0 Cenários</p>
+                    <div class="barra-externa">
+                        <div id="barra-interna" class="barra-interna"></div>
+                    </div>
+                </div>
+                <p id="acertos-texto" class="oculto">Acertos: 0</p>
+            </div>
+            <div id="header-controles">
+                <button id="help-btn" title="Ajuda"><i class="fas fa-question-circle"></i></button>
+            </div>
+        </header>
+
+        <main id="app-main">
+            <div id="boas-vindas" class="tela-container animada">
+                <div class="card">
+                    <h2>Bem-vindo ao Guia!</h2>
+                    <p>Aprenda a usar a internet e se proteger de golpes de forma simples e divertida.</p>
+                    <button id="comecar-btn">Começar</button>
+                </div>
+            </div>
+
+            <div id="menu-principal" class="tela-container oculto">
+                <div class="card">
+                    <h2>O que você gostaria de aprender hoje?</h2>
+                    <div class="opcoes-menu">
+                        <button id="guia-btn" class="menu-btn">
+                            <i class="fas fa-mobile-alt"></i> Guia Rápido de Uso do Celular
+                        </button>
+                        <button id="golpes-btn" class="menu-btn">
+                            <i class="fas fa-shield-alt"></i> Proteja-se de Golpes e Fraudes
+                        </button>
+                        <button id="simulador-btn" class="menu-btn">
+                            <i class="fas fa-user-shield"></i> Simulador de Golpes
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="cenarios-tradicionais" class="tela-container oculto">
+                <div class="card">
+                    <p class="descricao-cenario"></p>
+                    <div class="opcoes-container">
+                        <button class="opcao-btn" data-opcao="A"></button>
+                        <button class="opcao-btn" data-opcao="B"></button>
+                        <button class="opcao-btn" data-opcao="C"></button>
+                    </div>
+                    <p class="feedback-cenario"></p>
+                </div>
+            </div>
+
+            <div id="simulador-golpes" class="tela-container oculto">
+                <div class="simulacao-card">
+                    <h3 class="titulo-simulador"></h3>
+                    <div class="cenario-simulador">
+                        </div>
+                    <p class="feedback-simulador"></p>
+                </div>
+            </div>
+
+            <div id="tela-final" class="tela-container oculto">
+                <div class="card">
+                    <h2>Parabéns!</h2>
+                    <p id="resumo-final">Você concluiu a lição. Continue praticando para navegar na internet com mais segurança!</p>
+                </div>
+            </div>
+        </main>
+        
+        <footer id="app-footer" class="oculto">
+            <div class="acessibilidade-controls">
+                <button id="font-aumentar" title="Aumentar Fonte"><i class="fas fa-search-plus"></i></button>
+                <button id="font-diminuir" title="Diminuir Fonte"><i class="fas fa-search-minus"></i></button>
+                <button id="toggle-contraste" title="Alto Contraste"><i class="fas fa-moon"></i></button>
+            </div>
+            <div class="nav-buttons-container">
+                <button id="recomecar-btn" class="oculto"><i class="fas fa-redo-alt"></i></button>
+                <button id="proximo-btn" class="oculto"><i class="fas fa-arrow-right"></i></button>
+                <button id="proximo-simulador-btn" class="oculto"><i class="fas fa-arrow-right"></i></button>
+                <button id="voltar-menu-btn" class="oculto"><i class="fas fa-home"></i></button>
+            </div>
+        </footer>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
